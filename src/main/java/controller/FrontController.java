@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import controller.board.haitaiBoardListController;
+import controller.board.lotteBoardListController;
+import controller.board.nongshimBoardListController;
+import controller.board.orionBoardListController;
 import controller.home.HomeForwardingController;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -25,7 +29,18 @@ public class FrontController extends HttpServlet{
 		// Home관련 URL
 		list.put("/Home.go", new HomeForwardingController());
 		
+		// Board관련 URL
+		 // Lotte
+		list.put("/Board/lotteList.go", new lotteBoardListController());
 		
+		 // Haitai
+		list.put("/Board/haitaiList.go", new haitaiBoardListController());
+		
+		 // Orion
+		list.put("/Board/orionList.go", new orionBoardListController());
+		
+		 // Nongshim
+		list.put("/Board/nongshimList.go", new nongshimBoardListController());
 	}
 	
 	@Override

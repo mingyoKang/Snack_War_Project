@@ -24,39 +24,39 @@
 <h1 style = "font-family:cursive; font-weight:bold; font-size:50px; text-align:center;">Choose Your Memory</h1>
 <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
   <div class="col">
-    <div class="card h-100 p-4 border-danger">
+    <div class="card h-100 p-4 border-danger bg-transparent">
       <img src="Resources/images/lotte.svg" class="card-img-top" alt="...">
       <div class="card-body">
-        <a href = "#" class = "btn btn-outline-danger w-100">Lotte</a>
+        <a href = "/Board/lotteList.go" class = "btn btn-outline-danger w-100">Lotte</a>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card h-100 p-4 border-info">
+    <div class="card h-100 p-4 border-info bg-transparent">
       <img src="Resources/images/nongshim.svg" class="card-img-top" alt="...">
       <div class="card-body">
-        <a href = "#" class = "btn btn-outline-info w-100">NongShim</a>
+        <a href = "/Board/nongshimList.go" class = "btn btn-outline-info w-100">NongShim</a>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card h-100 p-4 border-warning">
+    <div class="card h-100 p-4 border-warning bg-transparent">
       <img src="Resources/images/orion.svg" class="card-img-top" alt="...">
       <div class="card-body">
-        <a href = "#" class = "btn btn-outline-warning w-100">Orion</a>
+        <a href = "/Board/orionList.go" class = "btn btn-outline-warning w-100">Orion</a>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card h-100 p-4 border-success">
+    <div class="card h-100 p-4 border-success bg-transparent">
       <img src="Resources/images/haitai.svg" class="card-img-top" alt="...">
       <div class="card-body">
-        <a href = "#" class = "btn btn-outline-success w-100">Haitai</a>
+        <a href = "/Board/haitaiList.go" class = "btn btn-outline-success w-100">Haitai</a>
       </div>
     </div>
   </div>
     <div class="col">
-    <div class="card h-100 p-4 border-dark">
+    <div class="card h-100 p-4 border-dark bg-transparent">
       <img src="Resources/images/conversation.svg" class="card-img-top" alt="...">
       <div class="card-body">
       	<a href = "#" class = "btn btn-dark w-100">Let's Chat</a>
@@ -64,7 +64,7 @@
     </div>
   </div>
     <div class="col">
-    <div class="card h-100 p-4 border-primary">
+    <div class="card h-100 p-4 border-primary bg-transparent">
       <img src="Resources/images/screwdriver-solid.svg" class="card-img-top" alt="...">
       <div class="card-body">
         <a href = "#" class = "btn btn-primary w-100">Let Us Know</a>
