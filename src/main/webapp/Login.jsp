@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class = "col-sm-5 mt-3" style = "display:inline-block;">
-  	<input type = "submit" value = "login" class = "btn btn-outline-success w-50">
+  	<a href = "/Home.go" class = "btn btn-outline-success w-50">Login</a>
   </div>
   <div class = "col-sm-5" style = "display:inline-block;">
   	<a href = "MemberJoin.jsp" class = "btn btn-outline-warning w-50">Newbie</a>
