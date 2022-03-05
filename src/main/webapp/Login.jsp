@@ -12,8 +12,8 @@
 	</h1>
 </div>
 
-<div style = "width:600px; height:300px; margin:100px auto; border:1px solid black; text-align:center; border-radius:20px;">
-	<h2 style = "margin-bottom:40px; margin-top:10px; font-weight:bold;">LOGIN</h2>
+<div style = "width:600px; height:300px; margin:100px auto; border:2px solid black; text-align:center; border-radius:20px;">
+	<h2 style = "margin-bottom:40px; margin-top:10px; font-weight:bold;">로그인</h2>
 <form>
   <div class="row mb-3 mt-3">
     <label for="userEmail" class="col-sm-3 col-form-label">Email</label>

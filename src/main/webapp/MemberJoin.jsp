@@ -8,7 +8,7 @@
 
 <div style = "width:600px; height:650px; margin:100px auto; border:2px solid olive; border-radius:20px; padding:100px 30px;">
 
-	<h2 style = "text-align:center; font-weight:300; color:olive; margin-bottom:20px; font-size:50px;">[Join in]</h2>
+	<h2 style = "text-align:center; font-weight:300; color:olive; margin-bottom:20px; font-size:50px;">가입하기</h2>
 <form class="row g-3">
 
   <div class="col-md-6 mt-3">
