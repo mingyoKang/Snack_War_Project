@@ -1,31 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- link 경로(head)포함 -->
+<%@include file = "../../module/link.jsp" %>
 
-<style>
-</style>
+<body>
 
-</head>
-<body style = "background-image: url(../Resources/images/pastel-wallpaper.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
-
-<div style = "width:1000px; height:830px; border:1px solid tomato; margin:50px auto; overflow:auto; padding:20px 10px;">
-	<h1 style = "text-align:center; margin-bottom:10px;">Lotte Snack List</h1>
-
+<h1 style = "text-align:center; margin-top:10px;">Lotte Snack List</h1>
+<div style = "width:1000px; height:830px; border:1px solid tomato; margin:20px auto; overflow:auto; padding:20px 10px;">
+	
 <div class="row row-cols-1 row-cols-md-3 g-3">
   <div id = "one" class="col">
-    <div class="card h-100 p-2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">배배</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -64,7 +54,7 @@
       <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"></p>
       </div>
     </div>
   </div>

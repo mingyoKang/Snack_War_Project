@@ -1,20 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Snack_War/Join</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-</head>
+<!-- link 경로(head포함) -->
+<%@include file = "/WEB-INF/module/link.jsp" %>
 
 <body>
 
 <div style = "width:600px; height:650px; margin:100px auto; border:2px solid olive; border-radius:20px; padding:100px 30px;">
 
-	<h2 style = "text-align:center; font-family:cursive; font-weight:300; color:olive; margin-bottom:20px; font-size:50px;">[Join in]</h2>
+	<h2 style = "text-align:center; font-weight:300; color:olive; margin-bottom:20px; font-size:50px;">[Join in]</h2>
 <form class="row g-3">
 
   <div class="col-md-6 mt-3">
