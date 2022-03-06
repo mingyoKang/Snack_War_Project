@@ -17,6 +17,7 @@
 
 <%@include file = "../module/nav.jsp" %>
 
+
 <div style = "width:1000px; height:830px;margin:15px auto; padding:20px 10px;" >
 
 <h1 style = "font-weight:bold; font-size:50px; text-align:center;">Choose Your Memory</h1>

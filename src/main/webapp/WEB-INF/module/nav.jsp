@@ -1,24 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<!-- link 경로(head포함) -->
-<%@include file = "../module/link.jsp" %>
-
-<body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-fluid" style = "font-size:20px;">
     <a class="navbar-brand" style = "font-size:30px;">
-    	<span style ="color:dodgerblue;">S</span><span style ="color:tomato;">n</span><span style ="color:gold;">a</span><span style ="color:dodgerblue;">c</span><span style ="color:green;">k</span> <span style = "color:tomato;">War</span>
+    	<span style ="color:dodgerblue;">S</span><span style ="color:tomato;">n</span><span style ="color:gold;">a</span><span style ="color:dodgerblue;">c</span><span style ="color:green;">k</span><span style = "color:tomato;">War</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li class="nav-item ms-3 me-3">
-          <a class="nav-link" aria-current="page" href="/Home.go">Home</a>
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" href="/Home.go">Home</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -40,6 +34,3 @@
     </div>
   </div>
 </nav>
-
-</body>
-</html>
