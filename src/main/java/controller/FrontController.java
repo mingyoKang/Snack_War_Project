@@ -8,6 +8,9 @@ import controller.board.haitaiBoardListController;
 import controller.board.lotteBoardListController;
 import controller.board.nongshimBoardListController;
 import controller.board.orionBoardListController;
+import controller.chat.chatListController;
+import controller.complaint.complaintController;
+import controller.complaint.complaintDoneController;
 import controller.home.HomeForwardingController;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -41,6 +44,13 @@ public class FrontController extends HttpServlet{
 		
 		 // Nongshim
 		list.put("/Board/nongshimList.go", new nongshimBoardListController());
+		
+		// Chat관련 URL
+		list.put("/Chat/chatList.go", new chatListController());
+		
+		// Complaint관련 URL
+		list.put("/Complaint/opinion.go", new complaintController());
+		list.put("/Complaint/done.go", new complaintDoneController());
 	}
 	
 	@Override

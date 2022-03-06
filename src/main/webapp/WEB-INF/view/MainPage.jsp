@@ -55,7 +55,7 @@
     <div class="card h-100 p-4 border-dark bg-transparent">
       <img src="Resources/images/conversation.svg" class="card-img-top" alt="...">
       <div class="card-body">
-      	<a href = "#" class = "btn btn-dark w-100">Let's Chat</a>
+      	<a href = "/Chat/chatList.go" class = "btn btn-dark w-100">Let's Chat</a>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@
     <div class="card h-100 p-4 border-primary bg-transparent">
       <img src="Resources/images/screwdriver-solid.svg" class="card-img-top" alt="...">
       <div class="card-body">
-        <a href = "#" class = "btn btn-primary w-100">Let Us Know</a>
+        <a href = "/Complaint/opinion.go?flag=init" class = "btn btn-primary w-100">Let Us Know</a>
       </div>
     </div>
   </div>
