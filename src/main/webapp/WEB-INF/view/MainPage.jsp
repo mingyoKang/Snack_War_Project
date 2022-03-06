@@ -15,7 +15,9 @@
 
 <body>
 
-<div style = "width:1000px; height:830px;margin:50px auto; padding:20px 10px;" >
+<%@include file = "../module/nav.jsp" %>
+
+<div style = "width:1000px; height:830px;margin:15px auto; padding:20px 10px;" >
 
 <h1 style = "font-weight:bold; font-size:50px; text-align:center;">Choose Your Memory</h1>
 <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
@@ -55,7 +57,7 @@
     <div class="card h-100 p-4 border-dark bg-transparent">
       <img src="Resources/images/conversation.svg" class="card-img-top" alt="...">
       <div class="card-body">
-      	<a href = "/Chat/chatList.go" class = "btn btn-dark w-100">Let's Chat</a>
+      	<a href = "/Chat/chatListSnack.go" class = "btn btn-dark w-100">Let's Chat</a>
       </div>
     </div>
   </div>

@@ -6,7 +6,9 @@
 
 <body>
 
-<div style = "width:1000px; height:400px; border:2px solid olive; margin:200px auto; padding:20px 10px;">
+<%@include file = "../../module/nav.jsp" %>
+
+<div style = "width:1000px; height:400px; border:2px solid olive; margin:180px auto; padding:20px 10px;">
 	<h1 style = "text-align:center; font-weight:bold;">의견을 남겨주세요!</h1>
 	<form method = "post" action = "/Complaint/opinion.go">
 		<div class="mb-3">

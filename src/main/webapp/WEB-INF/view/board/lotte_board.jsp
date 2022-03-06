@@ -6,8 +6,10 @@
 
 <body>
 
-<h1 style = "text-align:center; margin-top:10px;">Lotte Snack List</h1>
-<div style = "width:1000px; height:830px; border:2px solid tomato; margin:20px auto; overflow:auto; padding:20px 10px;">
+<%@include file = "../../module/nav.jsp" %>
+
+<h1 style = "text-align:center;">Lotte Snack List</h1>
+<div style = "width:1000px; height:750px; border:2px solid tomato; margin:20px auto; overflow:auto; padding:20px 10px;">
 
 <!-- 01 -->
 <div class="row row-cols-1 row-cols-md-3 g-3">
