@@ -22,7 +22,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="/Profile/userProfile.go">프로필</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">로그아웃</a></li>
+            <li><a class="dropdown-item" href="/LogoutProcess.go">로그아웃</a></li>
           </ul>
         </li>
 

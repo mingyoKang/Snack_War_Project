@@ -30,4 +30,9 @@ public class MemberService {
 	public boolean memberJoin(MemberVO vo) {
 		return dao.memberJoin(vo);
 	}
+	
+	// 아이디/비밀번호 일치여부 처리 함수
+	public MemberVO memberSearch(String email) {
+		return dao.memberSearch(email);
+	}
 }

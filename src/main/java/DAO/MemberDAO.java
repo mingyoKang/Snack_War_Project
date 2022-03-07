@@ -84,4 +84,41 @@ public class MemberDAO {
 		return flag;
 		
 	}
+	
+	// 아이디와 비밀번호가 DB와 일치하는지를 처리하는 함수(계정 조회함수)
+	public MemberVO memberSearch(String email) {
+		
+		MemberVO vo = null;
+		
+		try {
+			
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement("select * from member_tbl where email=?");
+			
+			pstmt.setString(1, email);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs !=null) {
+				
+				while(rs.next()) {
+					
+					vo = new MemberVO(rs.getString("email"),
+							rs.getString("password"),
+							rs.getString("address01"),
+							rs.getString("address02"),
+							rs.getString("age"));
+					
+				}
+				
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return vo;
+		
+	}
+	
 }
