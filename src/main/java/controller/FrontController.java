@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import controller.auth.LoginProController;
+import controller.auth.LogoutProController;
 import controller.board.haitaiBoardListController;
 import controller.board.lotteBoardListController;
 import controller.board.nongshimBoardListController;
@@ -13,6 +15,8 @@ import controller.chat.chatListSnackController;
 import controller.complaint.complaintController;
 import controller.complaint.complaintDoneController;
 import controller.home.HomeForwardingController;
+import controller.member.memberJoinController;
+import controller.profile.userProfileController;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -33,6 +37,9 @@ public class FrontController extends HttpServlet{
 		// Home관련 URL
 		list.put("/Home.go", new HomeForwardingController());
 		
+		// Member관련 URL
+		list.put("/MemberJoin.go", new memberJoinController());
+		
 		// Board관련 URL
 		 // Lotte
 		list.put("/Board/lotteList.go", new lotteBoardListController());
@@ -46,13 +53,20 @@ public class FrontController extends HttpServlet{
 		 // Nongshim
 		list.put("/Board/nongshimList.go", new nongshimBoardListController());
 		
-		// Chat관련 URL
+		 // Chat관련 URL
 		list.put("/Chat/chatListSnack.go", new chatListSnackController());
 		list.put("/Chat/chatListChat.go", new chatListChatController());
 		
-		// Complaint관련 URL
+		 // Complaint관련 URL
 		list.put("/Complaint/opinion.go", new complaintController());
 		list.put("/Complaint/done.go", new complaintDoneController());
+		
+		// Profile관련 URL
+		list.put("/Profile/userProfile.go", new userProfileController());
+		
+		// Auth관련 URL
+		list.put("/LoginProcess.go", new LoginProController());
+		list.put("/LogoutProcess.go", new LogoutProController());
 	}
 	
 	@Override
