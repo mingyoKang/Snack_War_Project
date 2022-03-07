@@ -37,7 +37,7 @@ public class memberJoinController implements Controller{
 		memberService.memberJoin(memberVO);
 		
 		// 03.페이지 이동
-		HttpUtil.forward(req, resp, "Login.jsp");
+		HttpUtil.forward(req, resp, "/WEB-INF/view/profile/joinWelcome.jsp");
 	}
 
 }
