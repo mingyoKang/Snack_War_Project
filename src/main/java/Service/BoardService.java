@@ -1,6 +1,9 @@
 package Service;
 
+import java.util.Vector;
+
 import DAO.BoardDAO;
+import VO.BoardVO;
 
 public class BoardService {
 	
@@ -25,4 +28,14 @@ public class BoardService {
 	}
 	// Singleton Pattern END
 
+	
+	// DB에서 정보 가져오기(게시판으로)
+	public Vector<BoardVO> getSnackRecoList(int start, int count){
+		return dao.getSnackRecoList(start, count);
+	}
+	
+	// DB에 있는 전체 정보 개수 가져오기
+	public int getTotalCount() {
+		return dao.getTotalCount();
+	}
 }
