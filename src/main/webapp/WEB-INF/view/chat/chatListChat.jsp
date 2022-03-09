@@ -18,8 +18,22 @@
   </li>
 </ul>
 
-<div style = "width:1000px; height:700px; border:2px solid olive; margin:20px auto; padding:20px 10px;">
+<div style = "width:1000px; height:700px; border:2px solid olive; margin:20px auto; padding:150px 50px;">
+
+	<div style = "height:400px; width:800px; margin:0px auto; padding:50px 80px;">
+		<div style = "float:left; width:300px; height:300px;">
+			<a href="#" class = "btn btn-outline-primary h-100 w-100 border-4" style = "font-size:30px; line-height:250px;">About SNACK</a>
+		</div>
+		<div style = "float:right; width:300px; height:300px;">
+			<a href="#" class = "btn btn-outline-danger h-100 w-100 border-4" style = "font-size:30px; line-height:250px;">About US</a>
+		</div>
+	</div>
+
 </div>
+
+<script>
+	
+</script>
 
 </body>
 </html>
