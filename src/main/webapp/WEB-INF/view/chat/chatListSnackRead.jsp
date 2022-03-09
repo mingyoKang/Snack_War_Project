@@ -19,7 +19,52 @@
   </li>
 </ul>
 
-<div style = "width:1000px; height:700px; border:2px solid olive; margin:20px auto; padding:20px 40px;">
+<%@page import = "VO.*" %>
+
+<%
+	BoardVO boardVO = (BoardVO) session.getAttribute("boardVO");
+
+	String currentPage = (String) request.getAttribute("currentPage");
+	
+	int start = (int) request.getAttribute("start");
+	int count = (int) request.getAttribute("count");
+%>
+
+<div style = "width:1000px; height:700px; border:2px solid olive; margin:20px auto; padding:100px 40px;">
+
+	<table class = "table" style = "font-size:18px;">
+		<tr>
+			<th>EMAIL</th>
+			<td><%=boardVO.getEmail() %></td>
+			<th>DATE</th>
+			<td><%=boardVO.getRegdate() %></td>
+		</tr>
+		<tr>
+			<th>TITLE</th>
+			<td><%=boardVO.getTitle() %></td>
+		</tr>
+		<tr>
+			<td colspan = "4">
+				<textarea class = "form-control" rows="10" cols="50"><%=boardVO.getContent() %></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "4" align = "right">View:<%=boardVO.getView() %></td>
+		</tr>
+	</table>
+	
+	<table class = "table">
+		<tr>
+			<td>
+				<a href="/Chat/chatListSnack.go?currentPage=<%=currentPage %>&start=<%=start %>&count=<%=count %>" class = "btn btn-light">BACK</a>
+			</td>
+			<td align = "right">
+				<a href="#" class = "btn btn-warning">EDIT</a>
+				<a href="#" class = "btn btn-danger">DELETE</a>
+			</td>
+		</tr>
+	</table>
+	
 </div>
 
 </body>

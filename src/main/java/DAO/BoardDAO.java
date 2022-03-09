@@ -160,4 +160,97 @@ public class BoardDAO {
 		
 		return count;
 	}
+	
+	// 게시물 View 증가시키는 함수
+	public void upView(int number) {
+		
+		try {
+			
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement("update board_tbl set view=view+1 where number=?");
+			
+			pstmt.setInt(1, number);
+			
+			pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+	}
+	
+	// 게시물 읽는 처리 함수
+	public BoardVO getBoardVO(int number) {
+		
+		// 데이터를 저장할 공간
+		BoardVO vo = null;
+		
+		// 게시물을 읽을 때마다 view는 하나씩 증가
+		upView(number);
+		
+		try {
+			
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement("select * from board_tbl where number=?");
+			
+			pstmt.setInt(1, number);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs !=null) {
+				
+				while(rs.next()) {
+					
+					vo = new BoardVO(
+							rs.getInt("number"),
+							rs.getString("email"),
+							rs.getString("password"),
+							rs.getString("title"),
+							rs.getString("content"),
+							rs.getString("regdate"),
+							rs.getInt("view"));
+					
+				}
+				
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				rs.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		return vo;
+	}
 }

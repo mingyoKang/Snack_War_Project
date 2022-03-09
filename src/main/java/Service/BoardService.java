@@ -38,4 +38,9 @@ public class BoardService {
 	public int getTotalCount() {
 		return dao.getTotalCount();
 	}
+	
+	// 게시물 읽기(Read)
+	public BoardVO getBoardVO(int number) {
+		return dao.getBoardVO(number);
+	}
 }

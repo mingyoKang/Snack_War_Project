@@ -215,7 +215,7 @@
 			%>
 			<td align="right">
 				<a href ="javascript:moveToFirst()" class = "btn btn-warning">처음으로</a>
-				<a href ="#" class = "btn btn-danger">글쓰기</a>
+				<a href ="#" class = "btn btn-dark">글쓰기</a>
 			</td>
 		</tr>
 	</table>
