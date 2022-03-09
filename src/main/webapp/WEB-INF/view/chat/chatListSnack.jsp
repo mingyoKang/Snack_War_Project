@@ -75,7 +75,7 @@
 				%>
 					<tr>
 						<td><%=list.get(i).getNumber() %></td>
-						<td><a href="#" style = "text-decoration:none;"><%=list.get(i).getTitle() %></a></td>
+						<td><a href="javascript:read(<%=list.get(i).getNumber() %>)" style = "text-decoration:none;"><%=list.get(i).getTitle() %></a></td>
 						<td><%=list.get(i).getRegdate() %></td>
 						<td><%=list.get(i).getView() %></td>
 					</tr>
@@ -133,6 +133,23 @@
 			document.pageForm.action = "/Chat/chatListSnack.go";
 			document.pageForm.submit();
 		}
+		
+		// 게시물 번호 받아서 읽는 페이지로 이동하는 함수 구현
+		function read(number){
+			
+			var numPerPage = <%=numPerPage %>;
+			
+			var page = <%=currentPage %>;
+			
+			document.pageForm.start.value = (page*numPerPage)-numPerPage;
+			document.pageForm.count.value = numPerPage;
+			
+			document.pageForm.currentPage.value = page;
+			
+			document.pageForm.number.value = number;
+			document.pageForm.action = "/Chat/chatListSnackRead.go";
+			document.pageForm.submit();
+		}
 	</script>
 	
 	<!-- 페이지 관련 정보를 전달하는 form -->
@@ -146,7 +163,7 @@
 	<%
 		int pageStart = ((currentBlock-1)*pagePerBlock)+1;
 		// 삼항 연산자
-		int pageEnd = ((pageStart+pagePerBlock)<=totalPage)?(pageStart+pagePerBlock):totalPage+1;
+		int pageEnd = ((pageStart+pagePerBlock)<=totalPage)?(pageStart+pagePerBlock):(totalPage+1);
 	%>
 	
 	<!-- 페이지 처리하기(Pagination과 버튼들) -->

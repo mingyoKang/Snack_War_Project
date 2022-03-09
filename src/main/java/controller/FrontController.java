@@ -12,6 +12,7 @@ import controller.board.nongshimBoardListController;
 import controller.board.orionBoardListController;
 import controller.chat.chatListChatController;
 import controller.chat.chatListSnackController;
+import controller.chat.chatListSnackReadController;
 import controller.complaint.complaintController;
 import controller.complaint.complaintDoneController;
 import controller.home.HomeForwardingController;
@@ -56,6 +57,7 @@ public class FrontController extends HttpServlet{
 		 // Chat관련 URL
 		list.put("/Chat/chatListSnack.go", new chatListSnackController());
 		list.put("/Chat/chatListChat.go", new chatListChatController());
+		list.put("/Chat/chatListSnackRead.go", new chatListSnackReadController());
 		
 		 // Complaint관련 URL
 		list.put("/Complaint/opinion.go", new complaintController());
