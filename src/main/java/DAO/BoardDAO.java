@@ -11,6 +11,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import VO.BoardVO;
+import VO.ReplyVO;
 
 public class BoardDAO {
 
@@ -252,5 +253,39 @@ public class BoardDAO {
 		}
 		
 		return vo;
+	}
+	
+	// 채팅 댓글 올리는 함수(POST)
+	public void postReply(ReplyVO vo) {
+		
+		try {
+			
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement("insert into reply_tbl values(null,?,?,?,now())");
+			
+			pstmt.setInt(1, vo.getBoard_number());
+			pstmt.setString(2, vo.getWriter());
+			pstmt.setString(3, vo.getComment());
+			
+			pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
 	}
 }

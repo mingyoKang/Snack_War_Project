@@ -10,9 +10,12 @@ import controller.board.haitaiBoardListController;
 import controller.board.lotteBoardListController;
 import controller.board.nongshimBoardListController;
 import controller.board.orionBoardListController;
+import controller.chat.aboutSnackController;
+import controller.chat.aboutUsController;
 import controller.chat.chatListChatController;
 import controller.chat.chatListSnackController;
 import controller.chat.chatListSnackReadController;
+import controller.chat.snackReplyPostController;
 import controller.complaint.complaintController;
 import controller.complaint.complaintDoneController;
 import controller.home.HomeForwardingController;
@@ -58,6 +61,10 @@ public class FrontController extends HttpServlet{
 		list.put("/Chat/chatListSnack.go", new chatListSnackController());
 		list.put("/Chat/chatListChat.go", new chatListChatController());
 		list.put("/Chat/chatListSnackRead.go", new chatListSnackReadController());
+		list.put("/Chat/aboutSnack.go", new aboutSnackController());
+		list.put("/Chat/aboutUs.go", new aboutUsController());
+		
+		list.put("/Chat/snackPost.go", new snackReplyPostController());
 		
 		 // Complaint관련 URL
 		list.put("/Complaint/opinion.go", new complaintController());

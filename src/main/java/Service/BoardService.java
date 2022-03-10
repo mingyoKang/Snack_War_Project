@@ -4,6 +4,7 @@ import java.util.Vector;
 
 import DAO.BoardDAO;
 import VO.BoardVO;
+import VO.ReplyVO;
 
 public class BoardService {
 	
@@ -42,5 +43,10 @@ public class BoardService {
 	// 게시물 읽기(Read)
 	public BoardVO getBoardVO(int number) {
 		return dao.getBoardVO(number);
+	}
+	
+	// 댓글 달기(POST Reply)
+	public void postReply(ReplyVO vo) {
+		dao.postReply(vo);
 	}
 }
