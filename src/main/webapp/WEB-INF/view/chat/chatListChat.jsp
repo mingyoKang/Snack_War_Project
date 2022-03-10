@@ -3,6 +3,7 @@
 <!-- link 경로(head)포함 -->
 <%@include file = "../../module/link.jsp" %>
 
+
 <body>
 
 <%@include file = "../../module/nav.jsp" %>
@@ -22,10 +23,10 @@
 
 	<div style = "height:400px; width:800px; margin:0px auto; padding:50px 80px;">
 		<div style = "float:left; width:300px; height:300px;">
-			<a href="/Chat/aboutSnack.go" class = "btn btn-outline-primary h-100 w-100 border-4" style = "font-size:30px; line-height:250px;">About SNACK</a>
+			<a href="/Chat/aboutSnack.go" type = "button" class = "btn btn-outline-primary h-100 w-100 border-4" style = "font-size:30px; line-height:250px;">About SNACK</a>	
 		</div>
 		<div style = "float:right; width:300px; height:300px;">
-			<a href="/Chat/aboutUs.go" class = "btn btn-outline-danger h-100 w-100 border-4" style = "font-size:30px; line-height:250px;">About US</a>
+			<a href="/Chat/aboutUs.go" id="popover02" class = "btn btn-outline-danger h-100 w-100 border-4" style = "font-size:30px; line-height:250px;">About US</a>
 		</div>
 	</div>
 
