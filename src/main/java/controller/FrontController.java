@@ -15,7 +15,10 @@ import controller.chat.aboutUsController;
 import controller.chat.chatListChatController;
 import controller.chat.chatListSnackController;
 import controller.chat.chatListSnackReadController;
+import controller.chat.snackReplyListController;
 import controller.chat.snackReplyPostController;
+import controller.chat.usReplyListController;
+import controller.chat.usReplyPostController;
 import controller.complaint.complaintController;
 import controller.complaint.complaintDoneController;
 import controller.home.HomeForwardingController;
@@ -65,6 +68,10 @@ public class FrontController extends HttpServlet{
 		list.put("/Chat/aboutUs.go", new aboutUsController());
 		
 		list.put("/Chat/snackPost.go", new snackReplyPostController());
+		list.put("/Chat/snackList.go", new snackReplyListController());
+		
+		list.put("/Chat/usPost.go", new usReplyPostController());
+		list.put("/Chat/usList.go", new usReplyListController());
 		
 		 // Complaint관련 URL
 		list.put("/Complaint/opinion.go", new complaintController());

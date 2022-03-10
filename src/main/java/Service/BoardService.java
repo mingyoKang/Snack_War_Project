@@ -49,4 +49,9 @@ public class BoardService {
 	public void postReply(ReplyVO vo) {
 		dao.postReply(vo);
 	}
+	
+	// 댓글 불러오기(LIST Reply)
+	public Vector<ReplyVO> getReplyList(int number){
+		return dao.getReplyList(number);
+	}
 }

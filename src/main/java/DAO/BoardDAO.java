@@ -255,7 +255,7 @@ public class BoardDAO {
 		return vo;
 	}
 	
-	// 채팅 댓글 올리는 함수(POST)
+	// 채팅 댓글 올리는 함수 (POST)
 	public void postReply(ReplyVO vo) {
 		
 		try {
@@ -287,5 +287,63 @@ public class BoardDAO {
 			
 		}
 		
+	}
+	
+	// 채팅 댓글 불러오는 함수 (LIST)
+	public Vector<ReplyVO> getReplyList(int number){
+		
+		Vector<ReplyVO> list = new Vector<ReplyVO>();
+		ReplyVO replyVO = null;
+		
+		try {
+			
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement("select * from reply_tbl where board_number=? order by reply_number desc");
+			
+			pstmt.setInt(1, number);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs !=null) {
+				
+				while(rs.next()) {
+					
+					replyVO = new ReplyVO(
+							rs.getInt("board_number"),
+							rs.getString("writer"),
+							rs.getString("comment"),
+							rs.getString("regdate"));
+					
+					list.add(replyVO);
+					
+				}
+				
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				rs.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		return list;
 	}
 }

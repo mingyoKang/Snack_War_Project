@@ -19,6 +19,47 @@
   </li>
 </ul>
 
+<script>
+
+	function postReply(){
+		
+		$.ajax({
+			url:"/Chat/usPost.go",
+			type:"GET",
+			datatype:"html",
+			data:{"comment":$("#comment").val()},
+			success:function(result){
+				// alert(result);
+				getReplyList();
+			},
+			error:function(){
+				alert("There is a problem!!");
+			}
+		});
+		
+	}
+	
+	function getReplyList(){
+		
+		$.ajax({
+			url:"/Chat/usList.go",
+			type:"GET",
+			datatype:"html",
+			success:function(result){
+				$("#replyDiv").empty();
+				$("#replyDiv").append(result);
+			},
+			error:function(){
+				alert("There is a problem!!");
+			}
+		});
+		
+	}
+	
+	getReplyList();
+
+</script>
+
 <div style = "width:1000px; height:700px; border:2px solid olive; margin:20px auto; padding:20px 50px;">
 	
 	<h2 style = "text-align:center;">=오늘의 한마디=</h2>
@@ -28,79 +69,18 @@
 		<p>-레오나르도 다빈치-</p>
 	</div>
 	
-	<div style = "border:1px solid black; height:400px; padding:20px; overflow:auto;">
+	<div class = "row" style = "height:110px; padding:10px; margin:10px;">
+		<div class = "col-10">
+			<textarea id = "comment" rows = "3" class = "form-control"></textarea>
+		</div>
+		<div class = "col-2">
+			<a onclick="postReply()" class = "btn btn-outline-warning h-100 w-100 p-3" style = "line-height:50px;">POST</a>
+		</div>
+	</div>
+	
+	<div id ="replyDiv" style = "border:1px solid black; height:300px; padding:20px; overflow:auto;">
 
-		<div class = "row" style = "border:2px solid dodgerblue; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:orange;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-
-		<div class = "row" style = "border:2px solid dodgerblue; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:orange;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-		<div class = "row" style = "border:2px solid dodgerblue; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:orange;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-		<div class = "row" style = "border:2px solid dodgerblue; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:orange;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-		<div class = "row" style = "border:2px solid dodgerblue; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:orange;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-		<div class = "row" style = "border:2px solid dodgerblue; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:orange;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-		<div class = "row" style = "border:2px solid dodgerblue; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:orange;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-											
+												
 	</div>
 
 </div>

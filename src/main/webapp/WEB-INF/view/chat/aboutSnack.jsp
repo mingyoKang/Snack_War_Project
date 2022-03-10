@@ -30,17 +30,35 @@
 			datatype:"html",
 			data:{"comment":$("#comment").val()},
 			success:function(result){
-				alert(result);
+				// alert(result);
+				getReplyList();
 			},
 			error:function(){
 				alert("There is a problem!!");
 			}
 		});
+			
+	}
+	
+	function getReplyList(){
 		
+		$.ajax({
+			url:"/Chat/snackList.go",
+			type:"GET",
+			datatype:"html",
+			success:function(result){
+				$("#replyDiv").empty();
+				$("#replyDiv").append(result);
+			},
+			error:function(){
+				alert("There is a problem!!");
+			}
+			
+		});
 		
 	}
 	
-
+	getReplyList();
 </script>
 
 <div style = "width:1000px; height:700px; border:2px solid olive; margin:20px auto; padding:20px 50px;">
@@ -59,37 +77,8 @@
 		</div>
 	</div>
 	
-	<div style = "height:250px; border:1px solid black; overflow:auto; padding:10px;">
-	
-		<div class = "row" style = "border:2px solid green; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:tomato;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-		<div class = "row" style = "border:2px solid green; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:tomato;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>
-		
-		<div class = "row" style = "border:2px solid green; padding:5px; width:700px; margin:5px; border-radius:20px;">
-			<div class = "col-2 me-2" style = "padding:7px 20px;">
-				<img src = "/Resources/images/person-circle.svg" width=50px height=50px>
-			</div>
-			<div class = "col-9">
-				<small style = "color:tomato;">Example@gmail.com</small>
-				<p>Blah Blah Blah</p>
-			</div>
-		</div>				
+	<div id = "replyDiv" style = "height:250px; border:1px solid black; overflow:auto; padding:10px;">
+					
 		
 	</div>
 </div>
