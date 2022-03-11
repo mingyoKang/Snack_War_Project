@@ -4,6 +4,12 @@
 <!-- link 경로(head)포함 -->
 <%@include file = "../../module/link.jsp" %>
 
+<style>
+	img{
+		height:180px;
+	}
+</style>
+
 <body>
 
 <%@include file = "../../module/nav.jsp" %>
@@ -15,7 +21,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-3">
 
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal01">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal01">
       <img src="../Resources/orionSnacks/samepizza.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">이구동성</h5>
@@ -34,7 +40,7 @@
       </div>
       <div class="modal-body" style = "text-align:center;">
         <img src = "../Resources/orionSnacks/samepizza.jpg">
-        <p>오리온 과자 "이구동성"</p>
+        <p style = "font-size:20px;">오리온 과자 "이구동성"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -47,11 +53,11 @@
 
 <!-- 02 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal02">
-      <img src="../Resources/orionSnacks/samepizza.jpg" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal02">
+      <img src="../Resources/orionSnacks/access.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a short card.</p>
+        <h5 class="card-title">엑서스</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -61,12 +67,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal02Label">배배</h5>
+        <h5 class="modal-title" id="modal02Label">엑서스</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/orionSnacks/samepizza.jpg">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/access.jpg">
+        <p style = "font-size:20px;">오리온 과자 "엑서스"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -79,11 +85,11 @@
 
 <!-- 03 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal03">
-      <img src="../Resources/orionSnacks/samepizza.jpg" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal03">
+      <img src="../Resources/orionSnacks/potatomountain.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">감자산맥</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -93,12 +99,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal03Label">배배</h5>
+        <h5 class="modal-title" id="modal03Label">감자산맥</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/orionSnacks/samepizza.jpg">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/potatomountain.jpg">
+        <p style = "font-size:20px;">오리온 과자 "감자산맥"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -111,11 +117,11 @@
 
 <!-- 04 -->  
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal04">
-      <img src="../Resources/orionSnacks/samepizza.jpg" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal04">
+      <img src="../Resources/orionSnacks/potatoinpotato.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">감자 속 감자</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -125,12 +131,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal04Label">배배</h5>
+        <h5 class="modal-title" id="modal04Label">감자 속 감자</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/orionSnacks/samepizza.jpg">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/potatoinpotato.jpg">
+        <p style = "font-size:20px;">오리온 과자 "감자 속 감자"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -143,11 +149,11 @@
 
 <!-- 05 --> 
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal05">
-      <img src="../Resources/orionSnacks/samepizza.jpg" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal05">
+      <img src="../Resources/orionSnacks/cheesene.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">치즈네</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -157,12 +163,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal05Label">배배</h5>
+        <h5 class="modal-title" id="modal05Label">치즈네</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/orionSnacks/samepizza.jpg">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/cheesene.jpg">
+        <p style = "font-size:20px;">오리온 과자 "치즈네"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -175,11 +181,11 @@
 
 <!-- 06 --> 
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal06">
-      <img src="../Resources/orionSnacks/samepizza.jpg" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal06">
+      <img src="../Resources/orionSnacks/newpop.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">뉴팝</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -189,12 +195,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal06Label">배배</h5>
+        <h5 class="modal-title" id="modal06Label">뉴팝</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/orionSnacks/samepizza.jpg">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/newpop.jpg">
+        <p style = "font-size:20px;">오리온 과자 "뉴팝"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -207,11 +213,11 @@
 
 <!-- 07 --> 
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal07">
-      <img src="../Resources/nongshimSnacks/pickstars.jpg" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal07">
+      <img src="../Resources/orionSnacks/eggmong.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">에그몽</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -221,12 +227,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal07Label">배배</h5>
+        <h5 class="modal-title" id="modal07Label">에그몽</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/nongshimSnacks/pickstars.jpg">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/eggmong.png">
+        <p style = "font-size:20px;">오리온 과자 "에그몽"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -239,11 +245,11 @@
 
 <!-- 08 --> 
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal08">
-      <img src="../Resources/nongshimSnacks/pickstars.jpg" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal08">
+      <img src="../Resources/orionSnacks/pole.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">미니폴</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -253,12 +259,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal08Label">배배</h5>
+        <h5 class="modal-title" id="modal08Label">미니폴</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/nongshimSnacks/pickstars.jpg">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/pole.png">
+        <p style = "font-size:20px;">오리온 과자 "미니폴"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -271,11 +277,11 @@
 
 <!-- 09 -->  
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal09">
-      <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal09">
+      <img src="../Resources/orionSnacks/toonies.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">투니스</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -285,16 +291,17 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal09Label">배배</h5>
+        <h5 class="modal-title" id="modal09Label">투니스</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/lotteSnacks/bebe.png">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/toonies.jpg">
+        <p style = "font-size:20px;">오리온 과자 "투니스"</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">LIKE</button>
+        <button type="button" class="btn btn-primary">DISLIKE</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -302,11 +309,11 @@
 
 <!-- 10 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal10">
-      <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal10">
+      <img src="../Resources/orionSnacks/chesterpaws.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">체스터쿵</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -316,16 +323,17 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal10Label">배배</h5>
+        <h5 class="modal-title" id="modal10Label">체스터쿵</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/lotteSnacks/bebe.png">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/chesterpaws.jpg">
+        <p style = "font-size:20px;">오리온 과자 "체스터쿵"</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">LIKE</button>
+        <button type="button" class="btn btn-primary">DISLIKE</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -333,11 +341,11 @@
 
 <!-- 11 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal11">
-      <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal11">
+      <img src="../Resources/orionSnacks/hureki.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">초코 후레이키</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -347,16 +355,17 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal11Label">배배</h5>
+        <h5 class="modal-title" id="modal11Label">초코 후레이키</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/lotteSnacks/bebe.png">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/hureki.jpg">
+        <p style = "font-size:20px;">오리온 과자 "초코 후레이키"</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">LIKE</button>
+        <button type="button" class="btn btn-primary">DISLIKE</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -364,11 +373,11 @@
 
 <!-- 12 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal12">
-      <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal12">
+      <img src="../Resources/orionSnacks/inshim.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">인심</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -378,16 +387,17 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal12Label">배배</h5>
+        <h5 class="modal-title" id="modal12Label">인심</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/lotteSnacks/bebe.png">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/inshim.jpg">
+        <p style = "font-size:20px;">오리온 과자 "인심"</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">LIKE</button>
+        <button type="button" class="btn btn-primary">DISLIKE</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -395,11 +405,11 @@
 
 <!-- 13 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal13">
-      <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal13">
+      <img src="../Resources/orionSnacks/browning.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">브라우닝</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -409,16 +419,17 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal13Label">배배</h5>
+        <h5 class="modal-title" id="modal13Label">브라우닝</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/lotteSnacks/bebe.png">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/browning.jpg">
+        <p style = "font-size:20px;">오리온 과자 "브라우닝"</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">LIKE</button>
+        <button type="button" class="btn btn-primary">DISLIKE</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -426,11 +437,11 @@
 
 <!-- 14 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal14">
-      <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal14">
+      <img src="../Resources/orionSnacks/tragatraga.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">트라가트라가</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -440,16 +451,17 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal14Label">배배</h5>
+        <h5 class="modal-title" id="modal14Label">트라가트라가</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/lotteSnacks/bebe.png">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/tragatraga.png">
+        <p style = "font-size:20px;">오리온 과자 "트라가트라가"</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">LIKE</button>
+        <button type="button" class="btn btn-primary">DISLIKE</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -457,11 +469,11 @@
 
 <!-- 15 -->
   <div class="col">
-    <div class="card h-100 p-2 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal15">
-      <img src="../Resources/lotteSnacks/bebe.png" class="card-img-top" alt="...">
+    <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal15">
+      <img src="../Resources/orionSnacks/alichip.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title">엘리칩</h5>
+        <p class="card-text">생산중단 년도</p>
       </div>
     </div>
   </div>
@@ -471,16 +483,17 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal15Label">배배</h5>
+        <h5 class="modal-title" id="modal15Label">엘리칩</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/lotteSnacks/bebe.png">
-        <p>롯데 제과 과자 "배배"</p>
+        <img src = "../Resources/orionSnacks/alichip.jpg">
+        <p style = "font-size:20px;">오리온 과자 "엘리칩"</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">LIKE</button>
+        <button type="button" class="btn btn-primary">DISLIKE</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
