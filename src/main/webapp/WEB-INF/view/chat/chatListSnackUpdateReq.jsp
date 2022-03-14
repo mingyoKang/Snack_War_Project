@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+    
 <!-- link 경로(head)포함 -->
 <%@include file = "../../module/link.jsp" %>
 
@@ -23,7 +23,7 @@
 
 	<h1 style = "text-align:center;">비밀번호 확인</h1>
 
-	<form method = "post" action = "/Chat/chatListSnackDeleteReq.go">
+	<form method = "post" action = "/Chat/chatListSnackUpdateReq.go">
 		<table class = "table w-50" style = "margin:80px auto; font-size:20px;">
 			<tr>
 				<th>PASSWORD</th>
@@ -36,7 +36,7 @@
 		<table class = "table w-50" style = "margin:0px auto; font-size:20px;">
 			<tr>
 				<td>
-					<input type = "submit" value = "확인" class = "btn btn-outline-danger w-100">
+					<input type = "submit" value = "확인" class = "btn btn-outline-success w-100">
 				</td>
 			</tr>		
 		</table>
@@ -47,6 +47,5 @@
 	</form>
 
 </div>
-
 </body>
 </html>

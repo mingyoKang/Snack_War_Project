@@ -17,6 +17,8 @@ import controller.chat.chatListSnackController;
 import controller.chat.chatListSnackDeleteController;
 import controller.chat.chatListSnackDeleteReqController;
 import controller.chat.chatListSnackReadController;
+import controller.chat.chatListSnackUpdateController;
+import controller.chat.chatListSnackUpdateReqController;
 import controller.chat.chatListSnackWriteController;
 import controller.chat.snackReplyListController;
 import controller.chat.snackReplyPostController;
@@ -71,6 +73,9 @@ public class FrontController extends HttpServlet{
 		
 		list.put("/Chat/chatListSnackDeleteReq.go", new chatListSnackDeleteReqController());
 		list.put("/Chat/chatListSnackDelete.go", new chatListSnackDeleteController());
+		
+		list.put("/Chat/chatListSnackUpdateReq.go", new chatListSnackUpdateReqController());
+		list.put("/Chat/chatListSnackUpdate.go", new chatListSnackUpdateController());
 		
 		list.put("/Chat/aboutSnack.go", new aboutSnackController());
 		list.put("/Chat/aboutUs.go", new aboutUsController());

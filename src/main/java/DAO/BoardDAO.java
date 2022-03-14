@@ -422,4 +422,38 @@ public class BoardDAO {
 		}
 		
 	}
+	
+	// 글 수정하기 함수 처리
+	public void boardUpdate(BoardVO vo) {
+		
+		try {
+			
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement("update board_tbl set title=?, content=? where number=?");
+			
+			pstmt.setString(1, vo.getTitle());
+			pstmt.setString(2, vo.getContent());
+			pstmt.setInt(3, vo.getNumber());
+			
+			pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+	}
 }

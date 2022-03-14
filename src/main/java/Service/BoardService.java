@@ -65,4 +65,9 @@ public class BoardService {
 	public void boardDelete(int number) {
 		dao.boardDelete(number);
 	}
+	
+	// 글 수정하기 함수 처리
+	public void boardUpdate(BoardVO vo) {
+		dao.boardUpdate(vo);
+	}
 }

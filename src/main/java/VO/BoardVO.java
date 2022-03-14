@@ -23,6 +23,13 @@ public class BoardVO {
 		this.view = view;
 	}
 	
+	public BoardVO(int number, String title, String content) {
+		
+		this.number = number;
+		this.title = title;
+		this.content = content;
+	}
+	
 	public int getNumber() {
 		return number;
 	}
