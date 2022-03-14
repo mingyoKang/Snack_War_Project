@@ -13,6 +13,11 @@
 - 일정 수준 이상의 관심을 받은 과자를 모아 제조사에 청원서를 제출
 - 유저들 간의 소통이 가능해 다양한 의견을 모아 과자 리스트를 더 추가하거나 페이지에대한 피드백을 주고 받을 수 있음
 
+## English
+- This project is about discontinued snacks
+- There are lots of snacks which are discontinued even though they were popular.
+- This page will make users feel young again.
+
 # Program Stacks
 - Java
 - HTML/CSS
