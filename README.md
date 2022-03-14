@@ -14,9 +14,10 @@
 - 유저들 간의 소통이 가능해 다양한 의견을 모아 과자 리스트를 더 추가하거나 페이지에대한 피드백을 주고 받을 수 있음
 
 ## English
-- This project is about discontinued snacks
+- This project is about discontinued snacks.
 - There are lots of snacks which are discontinued even though they were popular.
-- This page will make users feel young again.
+- Lots of gimmicks in this page will make them revive as fresh as can be.
+- Also, there is a communication page so that we can get your opinions and get some feedbacks.
 
 # Program Stacks
 - Java
