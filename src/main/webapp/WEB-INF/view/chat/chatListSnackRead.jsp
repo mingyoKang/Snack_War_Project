@@ -19,6 +19,22 @@
   </li>
 </ul>
 
+<%
+	String MSG = (String) request.getAttribute("MSG");
+
+	if(MSG == null){
+		MSG = "";
+	}
+%>
+
+<script>
+	var msg = "<%=MSG%>";
+	
+	if(msg !=""){
+		alert(msg);
+	}
+</script>
+
 <%@page import = "VO.*" %>
 
 <%
@@ -60,7 +76,7 @@
 			</td>
 			<td align = "right">
 				<a href="#" class = "btn btn-warning">EDIT</a>
-				<a href="#" class = "btn btn-danger">DELETE</a>
+				<a href="/Chat/chatListSnackDeleteReq.go?currentPage=<%=currentPage %>&start=<%=start %>&count=<%=count %>&flag=init" class = "btn btn-danger">DELETE</a>
 			</td>
 		</tr>
 	</table>

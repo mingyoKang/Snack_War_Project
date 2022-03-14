@@ -60,4 +60,9 @@ public class BoardService {
 	public void boardWrite(HttpServletRequest req) {
 		dao.boardWrite(req);
 	}
+	
+	// 글 삭제하기 함수 처리
+	public void boardDelete(int number) {
+		dao.boardDelete(number);
+	}
 }

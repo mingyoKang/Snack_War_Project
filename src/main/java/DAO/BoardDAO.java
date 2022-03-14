@@ -389,4 +389,37 @@ public class BoardDAO {
 		}
 		
 	}
+	
+	// 글 삭제하기 함수 처리
+	public void boardDelete(int number) {
+		
+		try {
+			
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement("delete from board_tbl where number=?");
+			
+			pstmt.setInt(1, number);
+			
+			pstmt.executeUpdate();
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+	}
 }
