@@ -438,9 +438,9 @@
 <!-- 14 -->
   <div class="col">
     <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal14">
-      <img src="../Resources/haitaiSnacks/uhsingsing.jpg" class="card-img-top" alt="...">
+      <img src="../Resources/haitaiSnacks/taco.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">어싱싱해</h5>
+        <h5 class="card-title">타코야끼볼</h5>
         <p class="card-text">생산중단 년도</p>
       </div>
     </div>
@@ -451,12 +451,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal14Label">어싱싱해</h5>
+        <h5 class="modal-title" id="modal14Label">타코야끼볼</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/haitaiSnacks/uhsingsing.jpg">
-        <p style = "font-size:20px;">해태 과자 "어싱싱해"</p>
+        <img src = "../Resources/haitaiSnacks/taco.jpg">
+        <p style = "font-size:20px;">해태 과자 "타코야끼볼"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>
@@ -470,9 +470,9 @@
 <!-- 15 -->
   <div class="col">
     <div class="card h-100 p-3 btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal15">
-      <img src="../Resources/haitaiSnacks/uhsingsing.jpg" class="card-img-top" alt="...">
+      <img src="../Resources/haitaiSnacks/chocobutter.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">어싱싱해</h5>
+        <h5 class="card-title">초코버터링</h5>
         <p class="card-text">생산중단 년도</p>
       </div>
     </div>
@@ -483,12 +483,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal15Label">어싱싱해</h5>
+        <h5 class="modal-title" id="modal15Label">초코버터링</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style = "text-align:center;">
-        <img src = "../Resources/haitaiSnacks/uhsingsing.jpg">
-        <p style = "font-size:20px;">해태 과자 "어싱싱해"</p>
+        <img src = "../Resources/haitaiSnacks/chocobutter.jpg">
+        <p style = "font-size:20px;">해태 과자 "초코버터링"</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger">LIKE</button>

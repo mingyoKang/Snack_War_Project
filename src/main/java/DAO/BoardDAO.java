@@ -11,7 +11,10 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import VO.BoardVO;
+import VO.MemberVO;
 import VO.ReplyVO;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 public class BoardDAO {
 
@@ -345,5 +348,45 @@ public class BoardDAO {
 		}
 		
 		return list;
+	}
+	
+	// 글쓰기 함수 처리
+	public void boardWrite(HttpServletRequest req) {
+		
+		try {
+			
+			conn = ds.getConnection();
+			
+			HttpSession session = req.getSession();
+			MemberVO memberVO = (MemberVO) session.getAttribute("memberVO");
+			
+			pstmt = conn.prepareStatement("insert into board_tbl values(null,?,?,?,?,now(),0)");
+			
+			// email, password, title, content
+			pstmt.setString(1, memberVO.getEmail());
+			pstmt.setString(2, req.getParameter("password"));
+			pstmt.setString(3, req.getParameter("title"));
+			pstmt.setString(4, req.getParameter("content"));
+			
+			pstmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
 	}
 }

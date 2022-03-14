@@ -5,6 +5,7 @@ import java.util.Vector;
 import DAO.BoardDAO;
 import VO.BoardVO;
 import VO.ReplyVO;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class BoardService {
 	
@@ -53,5 +54,10 @@ public class BoardService {
 	// 댓글 불러오기(LIST Reply)
 	public Vector<ReplyVO> getReplyList(int number){
 		return dao.getReplyList(number);
+	}
+	
+	// 글쓰기 함수 처리
+	public void boardWrite(HttpServletRequest req) {
+		dao.boardWrite(req);
 	}
 }
